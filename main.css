@@ -1,0 +1,121 @@
+.licna-karta {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    width: 490px;
+    height: 305px;
+    padding: 4px 8px;
+    border: 3px solid #aaa;
+    border-radius: 10px;
+    grid-template:  "zname blanko-prostor rm rm rm"
+                    "zname blanko-prostor lk lk lk"
+                    "fotografija fotografija prezime prezime grb"
+                    "fotografija fotografija ime ime grb"
+                    "fotografija fotografija datum datum grb"
+                    "fotografija fotografija pol registarski-broj mala-slika"
+                    "fotografija fotografija datum-izdavanje datum-izdavanje mala-slika"
+                    "fotografija fotografija vaznost vaznost mala-slika"
+                    "izdavac izdavac izdavac izdavac potpis";
+    grid-template-columns: 80px 80px 100px 100px 130px;
+    grid-template-rows: 30px 30px 35px 35px 35px 35px 35px 35px 30px;
+}
+
+.zname {
+    grid-area: zname;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.rm {
+    grid-area: rm;
+    align-self: center;
+}
+
+.lk {
+    grid-area: lk;
+    align-self: center;
+}
+
+.fotografija {
+    grid-area: fotografija;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.prezime {
+    grid-area: prezime;
+    align-self: center;
+}
+
+.ime {
+    grid-area: ime;
+    align-self: center;
+}
+
+.datum {
+    grid-area: datum;
+    align-self: center;
+}
+
+.pol {
+    grid-area: pol;
+    align-self: center;
+}
+
+.registarski-broj {
+    grid-area: registarski-broj;
+    align-self: center;
+}
+
+.datum-izdavanje {
+    grid-area: datum-izdavanje;
+    align-self: center;
+}
+
+.vaznost {
+    grid-area: vaznost;
+    align-self: center;
+}
+
+.grb {
+    grid-area: grb;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.mala-slika {
+    grid-area: mala-slika;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.izdavac {
+    grid-area: izdavac;
+    align-self: center;
+}
+
+.potpis {
+    grid-area: potpis;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+
+.golemi-bukvi {
+    font-size: 18px;
+    font-weight: bold;
+    color: #901;
+    line-height: 14px;
+}
+
+.mali-bukvi {
+    font-size: 13px;
+    font-style: italic;
+    color: #aaa;
+    line-height: 9px;
+}
+
